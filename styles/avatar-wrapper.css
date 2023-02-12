@@ -1,0 +1,18 @@
+.wrapper-with-avatar{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    gap: 10px 0px;
+}
+
+.near-avatar {
+    flex-grow: 1;
+}
+
+.avatar {
+    align-self: start;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    max-height: 305.02px;
+}

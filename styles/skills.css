@@ -1,0 +1,14 @@
+#skills ul {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#skills ul,
+nav ul {
+    padding: 0;
+    margin-left: 10px;
+
+    list-style-type: none;
+}

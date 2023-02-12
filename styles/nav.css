@@ -1,0 +1,18 @@
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a:link,
+nav a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: darkgreen;
+}
+
+nav a:active {
+    color: lightcoral;
+}

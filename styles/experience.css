@@ -1,0 +1,15 @@
+.job {
+    margin-top: 20px;
+}
+
+.position-and-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.time-period {
+    font-style: italic;
+    margin-right: 10px;
+}

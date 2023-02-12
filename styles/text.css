@@ -1,0 +1,57 @@
+p, 
+h3,
+pre {
+    margin: 5px 5px 5px 10px;
+}
+
+h2 {
+    margin: 40px 0px 20px 10px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+#aleksei-fedorenko {
+    margin: 30px 5px 5px 10px;
+
+    font-weight: normal;
+}
+
+#frontend-developer {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    font-weight: normal;
+    font-style: italic;
+    font-variant: normal;
+}
+
+/* Contacts header */
+.near-avatar h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#contacts ul {
+    margin: 0px;
+}
+
+#contacts li,
+#languages li {
+    margin-top: 5px;
+}
+
+.duty {
+    max-width: 400px;
+}
+
+.place {
+    font-style: italic;
+}
+
+.footer .year {
+    font-size: x-large;
+}
