@@ -5,130 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aleksei Fedorenko</title>
-    <link rel="stylesheet" href="./styles/structure.css">
+    <link rel="stylesheet" href="./styles/basic.css">
     <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/avatar-wrapper.css">
-    <link rel="stylesheet" href="./styles/skills.css">
-    <link rel="stylesheet" href="./styles/experience.css">
-    <link rel="stylesheet" href="./styles/text.css">
+    <link rel="stylesheet" href="./styles/contacts.css">
+    <link rel="stylesheet" href="./styles/chatbots.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="wrapper-with-avatar">
-            <div class="near-avatar">
-                <h1 id="aleksei-fedorenko">Aleksei Fedorenko</h1>
-                <h2 id="frontend-developer">Frontend Developer (intern)</h2>
-                <section id="contacts">
-                    <h2>Contacts</h2>
-                    <ul>
-                        <li>email: <a href="mailto:fedorenksei@gmail.com">fedorenksei@gmail.com</a></li>
-                        <li>GitHub: <a href="https://github.com/fedorenksei">@fedorenksei</a></li>
-                        <li>Telegram: <a href="https://t.me/fedorenksei">@fedorenksei</a></li>
-                        <li>Discord: fedorenksei#5132</li>
-                        <li>Location: Yerevan, Armenia</li>
-                        <li>Phone number: <a href="tel:+37455971127">+374 55 97-11-27</a></li>
-                    </ul>
-                </section>
+<body class="body">
+    <!-- <nav class="nav">
+        <ul>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#chatbots">Chatbots</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </nav> -->
+    <main class="main">
+        <section class="contacts">
+
+            <h1 class="personal-name">
+                Aleksei Fedorenko
+            </h1>
+            
+            <div class="social-networks">
+                <a 
+                    class="social-networks__link" 
+                    href="https://github.com/fedorenksei"
+                >GitHub</a>
+
+                <a 
+                    class="social-networks__link" 
+                    href="https://www.linkedin.com/in/aleksei-fedorenko"
+                >LinkedIn</a>
+
+                <a 
+                    class="social-networks__link" 
+                    href="https://t.me/fedorenksei"
+                >Telegram</a>
+
+                <a 
+                    class="social-networks__link" 
+                    href="https://discordapp.com/users/689096347252424777"
+                >Discord</a>
+
+                <a 
+                    href="mailto:fedorenksei@gmail.com"
+                    class="social-networks__link" 
+                >
+                    fedorenksei@gmail.com
+                </a>
+                <a 
+                    class="social-networks__link" 
+                    href="tel:+37455971127"
+                >
+                    +374 55 97-11-27
+                </a>
             </div>
-            <img class="avatar" src="./images/avatar.JPG" alt="Avatar">
-        </div>
-        <article id="about-me">
+            <p>My location: Yerevan, Armenia</p>
+        </section>
+        
+
+        <section class="about-me" id="about-me">
+            <img class="avatar" src="./assets/avatar.JPG" alt="Avatar">
+
             <h2>About me</h2>
             <p>
-                I am <a href="#experience">developing chatbots</a> on JAICP platform using JavaScript.
+                I have been developing chatbots for 2 years. I work with the JAICP development platform, using JavaScript.
             </p>
             <p>
-                Right now I am learning frontend development at <a href="https://rs.school/js-stage0/">Rolling Scopes School</a>.
+                Since November 2022 I am learning frontend development at <a href="https://rs.school/index.html"  target="_blank" rel="noopener noreferrer">Rolling Scopes School</a>.
             </p>
             <p>
-                I am looking for a job in software development, being excited to write scalable, maintainable and easy readable code.
+                I am looking for a job in software development. I am excited to write scalable, maintainable and easy readable code.
             </p>
-        </article>
-        <article id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>RegEx</li>
-                <li>Git</li>
-                <li>VSCode</li>
-            </ul>
-        </article>
-        <article id="code-sample">
-            <h2>Code Sample</h2>
-<pre class="code"><code>function multiply (a, b) {
-    return a * b;
-}</code></pre>
-        </article>
-        <article id="projects">
-            <h2>Projects</h2>
-            <p>This <a href="https://fedorenksei.github.io/rsschool-cv/">CV</a> is my single project so far.</p>
-        </article>
-        <article id="experience">
-            <h2>Experience</h2>
-            <section class="job">
-                <div class="position-and-time"> 
+        </section>
+
+        <section class="chatbots" id="chatbots">
+            <h2>Chatbots</h2>
+            <p>All positions are full-time, the two more recent are remote.</p>
+
+            <div class="jobs">
+                <div class="job">
                     <h3 class="position">Voicebot Developer</h3>
-                    <p class="time-period">Feb 2022 - Present</p>
+                    <span class="time-period">Feb 2022 – now</span>
+                    <div class="place">Action-MCFR Mediagroup</div>
+                    <div class="duty">
+                        <ul>
+                            <li>Developing and maintaining voicebots by myself on JAICP</li>
+                            <li>More than 20 projects launched</li>
+                            <li>Built a universal code module for reusing in all bots</li>
+                            <li>Transferred code from a platform non-scalable DSL to JavaScript</li>
+                            <li>Integrated bots with CRM system, Google Docs, operator platform</li>
+                            <li>Communicate with JAICP, clients and other teams</li>
+                        </ul>
+                    </div>
                 </div>
-                <p class="place">Action-MCFR Mediagroup (Full-time), Moscow</p>
-                <p class="duty">Developing and maintaining voicebots by myself on JAICP; more than 15 projects launched</p>
-            </section>
-            <section class="job">
-                <div class="position-and-time">
+                <div class="job">
                     <h3 class="position">Chatbot and Voicebot Developer</h3>
-                    <p class="time-period">Jul 2021 - Feb 2022</p>
+                    <span class="time-period">Jul 2021 – Feb 2022</span>
+                    <div class="place">Speech Technology Center</div>
+                    <div class="duty">
+                        <ul>
+                            <li>Developed and maintained chat and voice bots with a JAICP-like platform</li>
+                            <li>Worked in an team of developers</li>
+                            <li>A lot of bugs solved :)</li>
+                        </ul>             
+                    </div>
                 </div>
-                <p class="place">Speech Technology Center (Full-time), Moscow</p>
-                <p class="duty">Developing and maintaining chat and voice bots with a platform, within a team of developers                </p>
-            </section>
-            <section class="job">
-                <div class="position-and-time">
+                <div class="job">
                     <h3 class="position">Chatbot Developer</h3>
-                    <p class="time-period">Jul 2020 - Nov 2020</p>
+                    <span class="time-period">Jul 2020 – Nov 2020</span>
+                    <div class="place">Digital Intelligence</div>
+                    <div class="duty">Assisting in chatbots development on JAICP</div>
                 </div>
-                    <p class="place">Digital Intelligence (Full-time), Moscow</p>
-                <p class="duty">Assisting in chatbots development on JAICP</p>
-            </section>
-        </article>
-        <article id="education">
-            <div class="position-and-time">
-                <h2>Education</h2>
-                <p class="time-period">Sep 2015 - Jun 2019</p>
             </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Learning Frontend</h2>
+            <p> 
+                <a href="https://rolling-scopes-school.github.io/fedorenksei-JSFEPRESCHOOL2022Q4/plants/"  target="_blank" rel="noopener noreferrer">
+                    Here</a> is my recent student work. Skills that I practice: 
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Adaptive layout</li>
+                        <li>JS</li>
+                        <li>DOM manipulation</li>
+                    </ul> </p>
+            <p><a href="https://fedorenksei.github.io/rsschool-cv/"  target="_blank" rel="noopener noreferrer">This</a>
+                 was my very first web-page.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <span class="time-period">Sep 2015 - Jun 2019</span>
             <p>Bachelor’s Degree, ‘Theoretical and Computational Linguistics’</p>
             <p class="place">Higher School of Economics, Moscow</p>
-        </article>
-        <article id="languages">
+        </section>
+
+        <section id="languages">
             <h2>Languages</h2>
             <ul>
                 <li>English: Upper-Intermediate</li>
                 <li>Russian: Native</li>
                 <li>French: Intermediate</li>
             </ul>
-        </article>
+        </section>
     </main>
-    <footer>
-        <div class="footer github">
-            <a href="https://github.com/fedorenksei">My GitHub</a>
-        </div>
-        <div class="footer year">
-            2022
-        </div>
-        <a href="https://rs.school/js/">
-            <img class="rss-logo" src="./images/rs_school_js.svg" alt="RSSchool logo">
-        </a>
-    </footer>
 </body>
 </html>
