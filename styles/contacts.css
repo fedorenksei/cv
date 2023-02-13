@@ -1,0 +1,27 @@
+.personal-name {
+    margin-top: clamp(10px, 3vw, 40px);
+    margin-bottom: clamp(10px, 5vw, 40px);
+    font-size: clamp(24px, 10vw, 50px);
+}
+
+.avatar {
+    float: right;
+    width: clamp(20px, 30%, 500px);
+    max-height: 100%;
+    clip-path: circle(closest-side);
+    margin: 0 0 5px 5px;
+}
+
+.social-networks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.social-networks__link {
+    padding: 0.3em 0.4em 0.4em 0.4em;
+    border: 1px solid rgb(72, 75, 219);
+    border-radius: 7px;
+}
+
