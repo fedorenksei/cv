@@ -22,11 +22,11 @@
 h2 {
     font-variant: small-caps;
     margin-bottom: 20px;
-    width: fit-content;
+    /* width: fit-content;
     box-shadow:
         inset 0 0 0 120px rgba(209, 222, 235, 0.642),
         0 0 20px 20px rgba(209, 222, 235, 0.642);
-    border-radius: 20px;
+    border-radius: 20px; */
 }
 
 p {
