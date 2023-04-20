@@ -42,3 +42,7 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
