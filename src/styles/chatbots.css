@@ -1,46 +1,45 @@
 .jobs {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 35px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
 }
 
 .job {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px;
 }
 
-
 .time-period {
-    grid-column-start: 2;
-    grid-row-start: 2;
-    align-self: self-end;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  align-self: self-end;
 
-    height: min-content;
-    padding: 0 10px;
-    border: 2px solid rgb(98, 77, 49);
-    border-bottom: none;
-    border-radius: 20px;
-    font-style: italic;
+  height: min-content;
+  padding: 0 10px;
+  border: 2px solid rgb(98, 77, 49);
+  border-bottom: none;
+  border-radius: 20px;
+  font-style: italic;
 }
 
 .header3 {
-    grid-column-end: span 2;
-    margin-bottom: 10px;
+  grid-column-end: span 2;
+  margin-bottom: 10px;
 }
 
 .duty {
-    grid-column-start: 1;
-    grid-column-end: span 2;
+  grid-column-start: 1;
+  grid-column-end: span 2;
 
-    padding: 5px;
-    border: 2px solid rgba(169, 169, 169, 0.71);
-    border-radius: 4px;
-    background-color: rgb(242, 242, 242);
+  padding: 15px 5px 0 5px;
+  border: 2px solid rgba(169, 169, 169, 0.71);
+  border-radius: 4px;
+  background-color: rgb(242, 242, 242);
 }
 
 .place {
-    grid-column-start: 1;
-    font-style: italic;
+  grid-column-start: 1;
+  font-style: italic;
 }
