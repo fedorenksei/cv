@@ -5,6 +5,7 @@
 }
 
 .avatar {
+  display: none;
   float: right;
   width: clamp(20px, 30%, 500px);
   max-height: 100%;
