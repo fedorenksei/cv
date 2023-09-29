@@ -15,6 +15,6 @@ const puppeteer = require('puppeteer');
 async function main(page) {
   await page.goto('http://127.0.0.1:5500/src');
   await page.pdf({
-    path: 'get-pdf/result.pdf',
+    path: 'get-pdf/AlekseiFedorenkoCV.pdf',
   });
 }
