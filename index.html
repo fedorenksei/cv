@@ -31,295 +31,290 @@
       rel="stylesheet"
       href="./styles/projects.css"
     />
+    <link
+      rel="stylesheet"
+      href="./styles/print.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/6505024625.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="body">
     <main class="main">
-      <section class="contacts">
-        <h1 class="personal-name">Aleksei Fedorenko</h1>
+      <h1 class="personal-name">Aleksei Fedorenko</h1>
+      <div class="main-wrapper">
+        <section class="main-wrapper__side-info">
+          <section class="contacts">
+            <div class="social-networks">
+              <a
+                class="social-networks__link"
+                href="https://www.linkedin.com/in/aleksei-fedorenko"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="My LinkedIn profile"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
 
-        <div class="social-networks">
-          <a
-            class="social-networks__link"
-            href="https://github.com/fedorenksei"
-            >GitHub</a
-          >
+              <a
+                class="social-networks__link"
+                href="https://t.me/fedorenksei"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="My Telegram profile"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
 
-          <a
-            class="social-networks__link"
-            href="https://www.linkedin.com/in/aleksei-fedorenko"
-            >LinkedIn</a
-          >
+              <a
+                class="social-networks__link"
+                href="mailto:fedorenksei@gmail.com"
+              >
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+              <a
+                class="social-networks__link"
+                href="tel:+37455971127"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+            <span
+              ><i class="fa-solid fa-location-dot"></i> Yerevan, Armenia</span
+            >
+          </section>
 
-          <a
-            class="social-networks__link"
-            href="https://t.me/fedorenksei"
-            >Telegram</a
-          >
-
-          <a
-            class="social-networks__link"
-            href="https://discordapp.com/users/689096347252424777"
-            >Discord</a
-          >
-
-          <a
-            href="mailto:fedorenksei@gmail.com"
-            class="social-networks__link"
-          >
-            fedorenksei@gmail.com
-          </a>
-          <a
-            class="social-networks__link"
-            href="tel:+37455971127"
-          >
-            +374 55 97-11-27
-          </a>
-        </div>
-        <p>My location: Yerevan, Armenia</p>
-      </section>
-
-      <section
-        class="about-me"
-        id="about-me"
-      >
-        <img
-          class="avatar"
-          src="./assets/AlekseiFedorenko.png"
-          alt="Avatar"
-        />
-
-        <h2>About me</h2>
-        <p>
-          Experienced in JavaScript-based chatbot development for 2 years, I'm
-          now focused on transitioning to frontend development.
-        </p>
-        <p>
-          I have completed a frontend course at open-source community-driven
-          Rolling Scopes School. During these 10 months I have learnt a lot,
-          both in hard and soft skills. See my team's
-          <a href="#ec-app">final project</a>.
-        </p>
-        <p>
-          Committed to crafting scalable, maintainable, and user-friendly code.
-          Seeking a frontend dev role to apply emerging skills and contribute
-          effectively to innovative projects.
-        </p>
-      </section>
-
-      <section class="projects-section">
-        <h2>React projects</h2>
-        <article
-          class="project"
-          id="ec-app"
-        >
-          <h4>
+          <section>
+            <h2>Github</h2>
             <a
-              class="project__name"
-              href="https://ec-creative-team.netlify.app/"
+              class="social-networks__link"
+              href="https://github.com/fedorenksei"
               target="_blank"
               rel="noopener noreferrer"
+              title="My Github profile"
+              ><i class="fa-brands fa-github"></i> fedorenksei</a
             >
-              E-Commerce App</a
-            >
-          </h4>
-          <p>
-            A single-page application made with React, Redux, Tailwind, etc.
-            This is a fake bikes shop with products catalog, users authorization
-            and shopping cart. It was developed in an Agile team of three as a
-            final student project.
-          </p>
-          <a
-            href="https://github.com/fedorenksei/eCommerce-Application/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >github repo</a
+          </section>
+
+          <section class="skills">
+            <h2>Skills</h2>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+            <span>React</span>
+            <span>Tailwind</span>
+          </section>
+
+          <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+              <li>English</li>
+              <li>Russian (native)</li>
+            </ul>
+          </section>
+
+          <section id="education">
+            <h2>Education</h2>
+            <!-- <span class="time-period">Sep 2015 - Jun 2019</span> -->
+            <p>
+              Bachelor’s Degree, ‘Theoretical and Computational Linguistics’
+            </p>
+            <p>2015 – 2019</p>
+            <p class="place">Higher School of Economics, Moscow</p>
+          </section>
+        </section>
+
+        <section class="main-wrapper__main-info">
+          <section
+            class="about-me"
+            id="about-me"
           >
-        </article>
-      </section>
+            <h2>Objective</h2>
+            <p>
+              Aspiring Junior JavaScript Developer with a strong foundation in
+              JavaScript and frontend development, seeking an opportunity to
+              apply my skills, collaborate with a dynamic team, and continue my
+              professional growth in a challenging and innovative environment.
+            </p>
+          </section>
 
-      <section
-        class="projects-section"
-        id="projects"
-      >
-        <h2>Vanilla JS Projects</h2>
-        <p>
-          Here is my student projects on RSS course. I did not used any
-          frameworks or libraries in order to master fundamental skills.
-        </p>
-
-        <section>
-          <h3 class="header3">JS applications</h3>
-          <p>In these works I have:</p>
-          <ul>
-            <li>generated all DOM elements with JS,</li>
-            <li>separated my code into JS modules,</li>
-            <li>
-              applied different approaches to object creation: classes and
-              factory functions
-            </li>
-          </ul>
-
-          <div class="projects-group">
-            <article class="project">
+          <section class="projects-section">
+            <h2>React projects</h2>
+            <article
+              class="project"
+              id="ec-app"
+            >
               <h4>
                 <a
                   class="project__name"
-                  href="https://rolling-scopes-school.github.io/fedorenksei-JSFE2023Q1/minesweeper/"
+                  href="https://ec-creative-team.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Minesweeper</a
+                  E-Commerce App</a
                 >
               </h4>
+              <a
+                href="https://github.com/fedorenksei/eCommerce-Application/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-github"></i
+              ></a>
               <p>
-                The classic game in a simple design. You can choose one of three
-                field sizes and customize mines amount.
+                A single-page application made with React, Redux, Tailwind, etc.
+                This is a fake bikes shop with products catalog, users
+                authorization and shopping cart. It was developed in an Agile
+                team of three as a final student project.
               </p>
             </article>
-            <article class="project">
-              <h4>
-                <a
-                  class="project__name"
-                  href="https://fedorenksei.github.io/virtual-keyboard/src/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Virtual Keyboard</a
-                >
-              </h4>
-              <p>
-                A keyboard and an output field. You can choose between two
-                languages. Physical keystrokes are treated as the virtual ones.
-              </p>
-            </article>
-          </div>
+          </section>
+
+          <section
+            class="projects-section"
+            id="projects"
+          >
+            <h2>Vanilla JS Projects</h2>
+            <section>
+              <h3 class="header3">JS applications</h3>
+              <div class="projects-group">
+                <article class="project">
+                  <h4>
+                    <a
+                      class="project__name"
+                      href="https://rolling-scopes-school.github.io/fedorenksei-JSFE2023Q1/minesweeper/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Minesweeper</a
+                    >
+                  </h4>
+                  <p>
+                    The classic game in a simple design. You can choose one of
+                    three field sizes and customize mines amount.
+                  </p>
+                </article>
+                <article class="project">
+                  <h4>
+                    <a
+                      class="project__name"
+                      href="https://fedorenksei.github.io/virtual-keyboard/src/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Virtual Keyboard</a
+                    >
+                  </h4>
+                  <p>
+                    A keyboard and an output field. You can choose between two
+                    languages. Physical keystrokes are treated as the virtual
+                    ones.
+                  </p>
+                </article>
+              </div>
+            </section>
+
+            <section>
+              <h3 class="header3">Responsive layouts</h3>
+              <div class="projects-group">
+                <article class="project">
+                  <h4>
+                    <a
+                      class="project__name"
+                      href="https://rolling-scopes-school.github.io/fedorenksei-JSFE2023Q1/shelter/index.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Pets Shelter</a
+                    >
+                  </h4>
+                  <p>
+                    This two page web-site contains an endless slider a
+                    pagination (on the second
+                    <a
+                      href="https://rolling-scopes-school.github.io/fedorenksei-JSFE2023Q1/shelter/pets.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      page</a
+                    >) and popping up pets info. (please, open with Chrome).
+                  </p>
+                </article>
+                <article class="project">
+                  <h4>
+                    <a
+                      class="project__name"
+                      href="https://rolling-scopes-school.github.io/fedorenksei-JSFEPRESCHOOL2022Q4/plants/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Plants Store</a
+                    >
+                  </h4>
+                  <p>
+                    This web-page contains an accordion menu, a custom select
+                    form and a special card section (check it out!).
+                  </p>
+                </article>
+              </div>
+            </section>
+          </section>
+
+          <section
+            class="chatbots"
+            id="chatbots"
+          >
+            <h2>Commercial Experience with JavaScript</h2>
+            <div class="jobs">
+              <div class="job">
+                <h3 class="header3">Voicebot Developer</h3>
+                <span class="time-period">Feb 2022 – now</span>
+                <div class="place">Action-MCFR Mediagroup</div>
+                <div class="duty">
+                  <ul>
+                    <li>
+                      Developing and maintaining voicebots on JAICP: dozens of
+                      projects launched
+                    </li>
+                    <li>
+                      Automated JAICP-administrating processes with Axios and
+                      Puppeteer on Node.js
+                    </li>
+                    <li>
+                      Integrated bots with CRM system, Google Docs, operator
+                      platform
+                    </li>
+                    <li>Communicating with JAICP, clients and other teams</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="job">
+                <h3 class="header3">Chatbot and Voicebot Developer</h3>
+                <span class="time-period">Jul 2021 – Feb 2022</span>
+                <div class="place">Speech Technology Center</div>
+                <div class="duty">
+                  <ul>
+                    <li>
+                      Developed and maintained chat and voice bots with a
+                      JAICP-like platform
+                    </li>
+                    <li>Worked in an team of developers</li>
+                    <li>A lot of bugs solved</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="job">
+                <h3 class="header3">Chatbot Developer</h3>
+                <span class="time-period">Jul 2020 – Nov 2020</span>
+                <div class="place">Digital Intelligence</div>
+                <div class="duty">
+                  <ul>
+                    <li>Assisting in chatbots development on JAICP</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
-
-        <section>
-          <h3 class="header3">Responsive layouts</h3>
-          <p>
-            This layouts were made given by Figma designs. There are Javascript
-            DOM manipulations, CSS animations, semantic HTML.
-          </p>
-          <div class="projects-group">
-            <article class="project">
-              <h4>
-                <a
-                  class="project__name"
-                  href="https://rolling-scopes-school.github.io/fedorenksei-JSFE2023Q1/shelter/index.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Pets Shelter</a
-                >
-              </h4>
-              <p>
-                This two page web-site contains an endless slider a pagination
-                (on the second
-                <a
-                  href="https://rolling-scopes-school.github.io/fedorenksei-JSFE2023Q1/shelter/pets.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  page</a
-                >) and popping up pets info. (please, open with Chrome).
-              </p>
-            </article>
-            <article class="project">
-              <h4>
-                <a
-                  class="project__name"
-                  href="https://rolling-scopes-school.github.io/fedorenksei-JSFEPRESCHOOL2022Q4/plants/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Plants Store</a
-                >
-              </h4>
-              <p>
-                This web-page contains an accordion menu, a custom select form
-                and a special card section (check it out!).
-              </p>
-            </article>
-          </div>
-          <p>
-            Also, both sites have side navigation menus (appearing on narrow
-            screens).
-          </p>
-        </section>
-      </section>
-
-      <section
-        class="chatbots"
-        id="chatbots"
-      >
-        <h2>Commercial Experience with JavaScript</h2>
-        <p>All positions are full-time, the two more recent are remote.</p>
-
-        <div class="jobs">
-          <div class="job">
-            <h3 class="header3">Voicebot Developer</h3>
-            <span class="time-period">Feb 2022 – now</span>
-            <div class="place">Action-MCFR Mediagroup</div>
-            <div class="duty">
-              <ul>
-                <li>
-                  Developing and maintaining voicebots on JAICP: dozens of
-                  projects launched
-                </li>
-                <li>
-                  Automated JAICP-administrating processes with Axios and
-                  Puppeteer on Node.js
-                </li>
-                <li>
-                  Integrated bots with CRM system, Google Docs, operator
-                  platform
-                </li>
-                <li>Communicating with JAICP, clients and other teams</li>
-              </ul>
-            </div>
-          </div>
-          <div class="job">
-            <h3 class="header3">Chatbot and Voicebot Developer</h3>
-            <span class="time-period">Jul 2021 – Feb 2022</span>
-            <div class="place">Speech Technology Center</div>
-            <div class="duty">
-              <ul>
-                <li>
-                  Developed and maintained chat and voice bots with a JAICP-like
-                  platform
-                </li>
-                <li>Worked in an team of developers</li>
-                <li>A lot of bugs solved</li>
-              </ul>
-            </div>
-          </div>
-          <div class="job">
-            <h3 class="header3">Chatbot Developer</h3>
-            <span class="time-period">Jul 2020 – Nov 2020</span>
-            <div class="place">Digital Intelligence</div>
-            <div class="duty">
-              <p>Assisting in chatbots development on JAICP</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="education">
-        <h2>Education</h2>
-        <span class="time-period">Sep 2015 - Jun 2019</span>
-        <p>Bachelor’s Degree, ‘Theoretical and Computational Linguistics’</p>
-        <p class="place">Higher School of Economics, Moscow</p>
-      </section>
-
-      <section id="languages">
-        <h2>Languages</h2>
-        <ul>
-          <li>English: Upper-Intermediate</li>
-          <li>Russian: Native</li>
-          <li>French: Intermediate</li>
-        </ul>
-      </section>
+      </div>
     </main>
   </body>
 </html>

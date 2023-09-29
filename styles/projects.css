@@ -1,16 +1,7 @@
-.projects-section {
-  display: grid;
-  gap: 20px;
-}
-
 .projects-group {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 30px;
-}
-
-.project {
-  padding: 5px;
 }
 
 .project__name {
