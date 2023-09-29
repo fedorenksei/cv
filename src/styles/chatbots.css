@@ -33,7 +33,7 @@
   grid-column-start: 1;
   grid-column-end: span 2;
 
-  padding: 15px 5px 0 5px;
+  padding: 15px 5px;
   border: 2px solid rgba(169, 169, 169, 0.71);
   border-radius: 4px;
   background-color: rgb(242, 242, 242);

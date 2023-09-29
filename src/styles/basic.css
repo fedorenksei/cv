@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -20,9 +23,12 @@ h2 {
   margin-bottom: 20px;
 }
 
-p,
-ul {
+p {
   margin-bottom: 15px;
+}
+
+ul {
+  margin: 0;
 }
 
 footer {
