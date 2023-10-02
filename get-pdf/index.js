@@ -14,8 +14,11 @@ const puppeteer = require('puppeteer');
 
 async function main(page) {
   await page.goto('http://127.0.0.1:5500/src');
-  await page.waitForTimeout(500);
+  await page.setViewport({ width: 1080, height: 1024 });
+  await page.waitForTimeout(5000);
   await page.pdf({
     path: 'get-pdf/AlekseiFedorenkoCV.pdf',
+    printBackground: true,
+    preferCSSPageSize: true,
   });
 }

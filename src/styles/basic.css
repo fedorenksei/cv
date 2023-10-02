@@ -1,34 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;900&display=swap');
 
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font:
+    16px/1.5 'Inter',
+    sans-serif;
+  color: rgb(41, 0, 79);
 }
 
 .main {
   padding: 15px;
   margin: 0 auto;
-  max-width: 1000px;
-
-  font-size: clamp(16px, 5vw, 24px);
-  line-height: 1.5;
+  max-width: 1080px;
 }
 
-h2 {
-  margin-bottom: 20px;
+.main-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.main-wrapper__side-info {
+  background-color: rgba(247, 241, 253, 0.548);
+  padding: 1rem;
+  margin-top: -1rem;
+  margin-left: -1rem;
+}
+
+.main-wrapper__main-info {
+  margin-left: 1rem;
 }
 
 p {
   margin-bottom: 15px;
 }
 
+.education > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 ul {
   margin: 0;
+  padding-inline-start: 1rem;
+}
+
+.section-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 footer {

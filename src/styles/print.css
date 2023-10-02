@@ -1,0 +1,33 @@
+@media print {
+  html {
+    -webkit-print-color-adjust: exact;
+  }
+
+  .main {
+    font-size: 12px;
+  }
+
+  .projects-group {
+    display: flex;
+  }
+
+  .project-head-wrapper {
+    font-size: 1.3em;
+  }
+
+  .project {
+    grid-template-columns: 80px auto;
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid rgba(34, 0, 66, 0.292);
+  }
+
+  #ec-app {
+    grid-template-columns: 200px auto;
+  }
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0px;
+}
