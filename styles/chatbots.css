@@ -1,45 +1,27 @@
-.jobs {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 35px;
-}
-
 .job {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 250px auto;
   gap: 5px;
+  align-items: baseline;
+  padding-right: 100px;
 }
 
 .time-period {
-  grid-column-start: 2;
-  grid-row-start: 2;
-  align-self: self-end;
-
-  height: min-content;
-  padding: 0 10px;
-  border: 2px solid rgb(98, 77, 49);
-  border-bottom: none;
-  border-radius: 20px;
-  font-style: italic;
-}
-
-.header3 {
-  grid-column-end: span 2;
-  margin-bottom: 10px;
-}
-
-.duty {
+  grid-row: 1 / span 3;
   grid-column-start: 1;
-  grid-column-end: span 2;
 
-  /* padding: 15px 5px;
-  border: 2px solid rgba(169, 169, 169, 0.71);
-  border-radius: 4px;
-  background-color: rgb(242, 242, 242); */
+  display: grid;
+  gap: 5px;
+
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.time-period__dates {
+  font-weight: 400;
 }
 
 .place {
-  grid-column-start: 1;
   font-style: italic;
+  font-weight: 600;
 }

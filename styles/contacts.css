@@ -1,15 +1,17 @@
 .personal-name {
   margin: 0;
   font-size: 3em;
+  font-weight: 200;
+  text-align: center;
 }
 
-.avatar {
-  display: none;
-  float: right;
-  width: clamp(20px, 30%, 500px);
-  max-height: 100%;
-  clip-path: circle(closest-side);
-  margin: 0 0 5px 5px;
+.profession {
+  text-align: center;
+  margin: 0;
+  line-height: 1em;
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgba(41, 0, 79, 0.656);
 }
 
 .social-networks {
@@ -18,14 +20,29 @@
   justify-content: start;
   gap: 1rem;
   margin-bottom: 10px;
+  font-size: 1.3em;
 }
 
-.social-networks__link {
+.link {
   text-decoration: none;
-  color: rgb(28, 28, 144);
-  transition: color 300ms;
+  color: rgb(35, 35, 183);
+  transition: color 200ms;
 }
 
-.social-networks__link:hover {
+.link:hover {
   color: rgb(196, 56, 224);
+}
+
+.aside-header {
+  text-transform: uppercase;
+  color: rgba(62, 0, 117, 0.833);
+  margin-bottom: 0.2em;
+}
+
+.skills p {
+  margin-block: 5px;
+}
+
+.github-link {
+  font-size: 1.2em;
 }

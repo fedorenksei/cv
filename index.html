@@ -17,10 +17,6 @@
     />
     <link
       rel="stylesheet"
-      href="./styles/nav.css"
-    />
-    <link
-      rel="stylesheet"
       href="./styles/contacts.css"
     />
     <link
@@ -40,15 +36,19 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="body">
+  <body>
     <main class="main">
-      <h1 class="personal-name">Aleksei Fedorenko</h1>
+      <div class="title-wrapper">
+        <h1 class="personal-name">Aleksei Fedorenko</h1>
+        <h2 class="profession">Frontend Developer</h2>
+      </div>
+
       <div class="main-wrapper">
         <section class="main-wrapper__side-info">
           <section class="contacts">
             <div class="social-networks">
               <a
-                class="social-networks__link"
+                class="link"
                 href="https://www.linkedin.com/in/aleksei-fedorenko"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -57,7 +57,7 @@
               ></a>
 
               <a
-                class="social-networks__link"
+                class="link"
                 href="https://t.me/fedorenksei"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -66,13 +66,13 @@
               ></a>
 
               <a
-                class="social-networks__link"
+                class="link"
                 href="mailto:fedorenksei@gmail.com"
               >
                 <i class="fa-regular fa-envelope"></i>
               </a>
               <a
-                class="social-networks__link"
+                class="link"
                 href="tel:+37455971127"
               >
                 <i class="fa-solid fa-phone"></i>
@@ -84,9 +84,9 @@
           </section>
 
           <section>
-            <h2>Github</h2>
+            <h3 class="aside-header">Github</h3>
             <a
-              class="social-networks__link"
+              class="link github-link"
               href="https://github.com/fedorenksei"
               target="_blank"
               rel="noopener noreferrer"
@@ -96,39 +96,35 @@
           </section>
 
           <section class="skills">
-            <h2>Skills</h2>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JS</span>
-            <span>React</span>
-            <span>Tailwind</span>
+            <h3 class="aside-header">Skills</h3>
+            <ul>
+              <li>HTML, CSS</li>
+              <li>JS, TypeScript</li>
+              <li>React, Redux</li>
+              <li>Tailwind, SCSS</li>
+              <li>Webpack, Vite</li>
+              <li>Git, Github</li>
+            </ul>
           </section>
 
-          <section id="languages">
-            <h2>Languages</h2>
+          <section>
+            <h3 class="aside-header">Languages</h3>
             <ul>
               <li>English</li>
               <li>Russian (native)</li>
             </ul>
           </section>
 
-          <section id="education">
-            <h2>Education</h2>
-            <!-- <span class="time-period">Sep 2015 - Jun 2019</span> -->
-            <p>
-              Bachelor’s Degree, ‘Theoretical and Computational Linguistics’
-            </p>
-            <p>2015 – 2019</p>
-            <p class="place">Higher School of Economics, Moscow</p>
+          <section class="education">
+            <h3 class="aside-header">Education</h3>
+            <p class="place">Higher School of Economics (Moscow)</p>
+            <p>Bachelor of Theoretical and Computational Linguistics</p>
           </section>
         </section>
 
         <section class="main-wrapper__main-info">
-          <section
-            class="about-me"
-            id="about-me"
-          >
-            <h2>Objective</h2>
+          <section>
+            <h3 class="section-header">Objective</h3>
             <p>
               Aspiring Junior JavaScript Developer with a strong foundation in
               JavaScript and frontend development, seeking an opportunity to
@@ -138,135 +134,251 @@
           </section>
 
           <section class="projects-section">
-            <h2>React projects</h2>
-            <article
-              class="project"
-              id="ec-app"
-            >
-              <h4>
-                <a
-                  class="project__name"
-                  href="https://ec-creative-team.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  E-Commerce App</a
-                >
-              </h4>
-              <a
-                href="https://github.com/fedorenksei/eCommerce-Application/"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <p>
-                A single-page application made with React, Redux, Tailwind, etc.
-                This is a fake bikes shop with products catalog, users
-                authorization and shopping cart. It was developed in an Agile
-                team of three as a final student project.
-              </p>
-            </article>
-          </section>
+            <h3 class="section-header">Frontend projects</h3>
 
-          <section
-            class="projects-section"
-            id="projects"
-          >
-            <h2>Vanilla JS Projects</h2>
             <section>
-              <h3 class="header3">JS applications</h3>
+              <h4 class="projects-subsection-header">React Project</h4>
               <div class="projects-group">
-                <article class="project">
-                  <h4>
-                    <a
-                      class="project__name"
-                      href="https://rolling-scopes-school.github.io/fedorenksei-JSFE2023Q1/minesweeper/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Minesweeper</a
-                    >
-                  </h4>
-                  <p>
-                    The classic game in a simple design. You can choose one of
-                    three field sizes and customize mines amount.
-                  </p>
-                </article>
-                <article class="project">
-                  <h4>
-                    <a
-                      class="project__name"
-                      href="https://fedorenksei.github.io/virtual-keyboard/src/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Virtual Keyboard</a
-                    >
-                  </h4>
-                  <p>
-                    A keyboard and an output field. You can choose between two
-                    languages. Physical keystrokes are treated as the virtual
-                    ones.
-                  </p>
+                <article
+                  class="project"
+                  id="ec-app"
+                >
+                  <img
+                    src="./assets/projects/ec-app.webp"
+                    alt="Minesweeper app"
+                    class="project__image"
+                  />
+                  <div class="project__info">
+                    <div class="project-head-wrapper">
+                      <a
+                        class="link"
+                        href="https://ec-creative-team.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div class="project-name-wrapper">
+                          <i class="fa-solid fa-link"></i>
+                          <h5 class="project__name">E-Commerce App</h5>
+                        </div>
+                      </a>
+                      <a
+                        class="link"
+                        href="https://github.com/fedorenksei/eCommerce-Application/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Github repository"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                    <p class="project__description">
+                      A single-page application made with React, Redux,
+                      Tailwind, etc. This is a fake bikes shop with products
+                      catalog, users authorization and shopping cart. It was
+                      developed in an Agile team of three as a final student
+                      project.
+                    </p>
+                    <div class="project-keywords">
+                      <span class="project-keyword">React</span>
+                      <span class="project-keyword">Redux</span>
+                      <span class="project-keyword">Typescript</span>
+                      <span class="project-keyword">Tailwind</span>
+                    </div>
+                  </div>
                 </article>
               </div>
             </section>
 
             <section>
-              <h3 class="header3">Responsive layouts</h3>
+              <h4 class="projects-subsection-header">Vanilla JS Projects</h4>
+
               <div class="projects-group">
                 <article class="project">
-                  <h4>
-                    <a
-                      class="project__name"
-                      href="https://rolling-scopes-school.github.io/fedorenksei-JSFE2023Q1/shelter/index.html"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Pets Shelter</a
-                    >
-                  </h4>
-                  <p>
-                    This two page web-site contains an endless slider a
-                    pagination (on the second
-                    <a
-                      href="https://rolling-scopes-school.github.io/fedorenksei-JSFE2023Q1/shelter/pets.html"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      page</a
-                    >) and popping up pets info. (please, open with Chrome).
-                  </p>
+                  <img
+                    src="./assets/projects/minesweeper-small.webp"
+                    alt="Minesweeper app"
+                    class="project__image"
+                  />
+                  <div class="project__info">
+                    <div class="project-head-wrapper">
+                      <a
+                        class="link"
+                        href="https://fedorenksei.github.io/RSS-JSFE-2023Q1/minesweeper/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div class="project-name-wrapper">
+                          <i class="fa-solid fa-link"></i>
+                          <h5 class="project__name">Minesweeper</h5>
+                        </div>
+                      </a>
+                      <a
+                        class="link"
+                        href="https://github.com/fedorenksei/RSS-JSFE-2023Q1/tree/minesweeper"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Github repository"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                    <p class="project__description">
+                      The classic game in a simple design. You can choose one of
+                      three field sizes and customize mines amount.
+                    </p>
+                  </div>
+                  <div class="project-keywords">
+                    <span class="project-keyword">ES6</span>
+                    <span class="project-keyword">Typescript</span>
+                    <span class="project-keyword">Webpack</span>
+                    <span class="project-keyword">ESLint</span>
+                  </div>
                 </article>
+
                 <article class="project">
-                  <h4>
-                    <a
-                      class="project__name"
-                      href="https://rolling-scopes-school.github.io/fedorenksei-JSFEPRESCHOOL2022Q4/plants/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Plants Store</a
-                    >
-                  </h4>
-                  <p>
-                    This web-page contains an accordion menu, a custom select
-                    form and a special card section (check it out!).
-                  </p>
+                  <img
+                    src="./assets/projects/virtual-keyboard.webp"
+                    alt="Minesweeper app"
+                    class="project__image"
+                  />
+                  <div class="project__info">
+                    <div class="project-head-wrapper">
+                      <a
+                        class="link"
+                        href="https://fedorenksei.github.io/virtual-keyboard/src/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div class="project-name-wrapper">
+                          <i class="fa-solid fa-link"></i>
+                          <h5 class="project__name">Virtual Keyboard</h5>
+                        </div>
+                      </a>
+                      <a
+                        class="link"
+                        href="https://github.com/fedorenksei/virtual-keyboard/tree/development"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Github repository"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                    <p class="project__description">
+                      A keyboard and an output field. You can choose between two
+                      languages. Physical keystrokes are treated as the virtual
+                      ones.
+                    </p>
+                  </div>
+                  <div class="project-keywords">
+                    <span class="project-keyword">ES6</span>
+                    <span class="project-keyword">ESLint</span>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section>
+              <h4 class="projects-subsection-header">Responsive layouts</h4>
+              <div class="projects-group">
+                <article class="project">
+                  <img
+                    src="./assets/projects/shelter.webp"
+                    alt="Minesweeper app"
+                    class="project__image"
+                  />
+                  <div class="project__info">
+                    <div class="project-head-wrapper">
+                      <a
+                        class="link"
+                        href="https://fedorenksei.github.io/RSS-JSFE-2023Q1/shelter/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div class="project-name-wrapper">
+                          <i class="fa-solid fa-link"></i>
+                          <h5 class="project__name">Pets Shelter</h5>
+                        </div>
+                      </a>
+                      <a
+                        class="link"
+                        href="https://github.com/fedorenksei/RSS-JSFE-2023Q1/tree/shelter-part3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Github repository"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                    <p class="project__description">
+                      A two page web-site with an endless slider, a pagination
+                      (on the second
+                      <a
+                        href="https://fedorenksei.github.io/RSS-JSFE-2023Q1/shelter/pets.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        page</a
+                      >) and modal pop up.
+                    </p>
+                  </div>
+                  <div class="project-keywords">
+                    <span class="project-keyword">HTML</span>
+                    <span class="project-keyword">CSS</span>
+                    <span class="project-keyword">JS</span>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <img
+                    src="./assets/projects/plants.webp"
+                    alt="Minesweeper app"
+                    class="project__image"
+                  />
+                  <div class="project__info">
+                    <div class="project-head-wrapper">
+                      <a
+                        class="link"
+                        href="https://fedorenksei.github.io/RSS-PRESCHOOL-2022Q4/plants/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div class="project-name-wrapper">
+                          <i class="fa-solid fa-link"></i>
+                          <h5 class="project__name">Plants Store</h5>
+                        </div>
+                      </a>
+                      <a
+                        class="link"
+                        href="https://github.com/fedorenksei/RSS-PRESCHOOL-2022Q4/tree/plants-part3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Github repository"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                    <p class="project__description">
+                      This web-page contains an accordion menu, a custom select
+                      form and a special card section (check it out!).
+                    </p>
+                  </div>
+                  <div class="project-keywords">
+                    <span class="project-keyword">HTML</span>
+                    <span class="project-keyword">CSS</span>
+                    <span class="project-keyword">JS</span>
+                  </div>
                 </article>
               </div>
             </section>
           </section>
 
-          <section
-            class="chatbots"
-            id="chatbots"
-          >
-            <h2>Commercial Experience with JavaScript</h2>
+          <section class="chatbots">
+            <h3 class="section-header">
+              Commercial Experience with JavaScript
+            </h3>
             <div class="jobs">
               <div class="job">
-                <h3 class="header3">Voicebot Developer</h3>
-                <span class="time-period">Feb 2022 – now</span>
+                <h4 class="position">Voicebot Developer</h4>
+                <div class="time-period">
+                  <span class="time-period__dates">Feb 2022 – present</span>
+                  <span>1 year 7 months</span>
+                </div>
                 <div class="place">Action-MCFR Mediagroup</div>
                 <div class="duty">
                   <ul>
@@ -286,9 +398,13 @@
                   </ul>
                 </div>
               </div>
+
               <div class="job">
-                <h3 class="header3">Chatbot and Voicebot Developer</h3>
-                <span class="time-period">Jul 2021 – Feb 2022</span>
+                <h4 class="position">Chatbot and Voicebot Developer</h4>
+                <div class="time-period">
+                  <span class="time-period__dates">Jul 2021 – Feb 2022</span>
+                  <span>8 months</span>
+                </div>
                 <div class="place">Speech Technology Center</div>
                 <div class="duty">
                   <ul>
@@ -301,9 +417,13 @@
                   </ul>
                 </div>
               </div>
+
               <div class="job">
-                <h3 class="header3">Chatbot Developer</h3>
-                <span class="time-period">Jul 2020 – Nov 2020</span>
+                <h4 class="position">Chatbot Developer</h4>
+                <div class="time-period">
+                  <span class="time-period__dates">Jul 2020 – Nov 2020</span>
+                  <span>4 months</span>
+                </div>
                 <div class="place">Digital Intelligence</div>
                 <div class="duty">
                   <ul>
@@ -316,5 +436,15 @@
         </section>
       </div>
     </main>
+    <p class="see-online-version">
+      See
+      <a
+        href="https://aleksei-fedorenko-cv.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >online version</a
+      >
+      of this CV
+    </p>
   </body>
 </html>
