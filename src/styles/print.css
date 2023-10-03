@@ -25,6 +25,10 @@
   #ec-app {
     grid-template-columns: 200px auto;
   }
+
+  .see-online-version {
+    display: block;
+  }
 }
 
 @page {

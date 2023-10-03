@@ -15,6 +15,7 @@ body {
 
 .main {
   padding: 15px;
+  padding-bottom: 50px;
   margin: 0 auto;
   max-width: 1080px;
 }
@@ -58,4 +59,9 @@ ul {
 footer {
   display: flex;
   justify-content: center;
+}
+
+.see-online-version {
+  display: none;
+  text-align: center;
 }

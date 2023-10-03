@@ -1,29 +1,27 @@
 .job {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 250px auto;
   gap: 5px;
+  align-items: baseline;
+  padding-right: 100px;
 }
 
 .time-period {
-  grid-column-start: 2;
-  grid-row-start: 2;
-  align-self: self-end;
+  grid-row: 1 / span 3;
+  grid-column-start: 1;
 
-  height: min-content;
-  padding: 0 10px;
-  border: 2px solid rgb(73, 12, 106);
-  border-bottom: none;
-  border-radius: 20px;
-  font-style: italic;
+  display: grid;
+  gap: 5px;
+
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
-.duty {
-  grid-column-start: 1;
-  grid-column-end: span 2;
+.time-period__dates {
+  font-weight: 400;
 }
 
 .place {
-  grid-column-start: 1;
   font-style: italic;
   font-weight: 600;
 }

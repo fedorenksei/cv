@@ -91,3 +91,7 @@
 .projects-section section:first-of-type > h4 {
   margin-top: 0.5em;
 }
+
+.projects-section section:last-of-type {
+  padding-bottom: 2em;
+}
