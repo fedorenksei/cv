@@ -4,6 +4,10 @@
   gap: 20px;
 }
 
+.projects-group_react {
+  grid-template-columns: none;
+}
+
 .projects-subsection-header,
 .position {
   font-size: 1.7em;
@@ -80,11 +84,11 @@
   border-radius: 999px;
 }
 
-#ec-app .project__image {
+.project_wide .project__image {
   aspect-ratio: 16/9;
 }
 
-#ec-app {
+.project_wide {
   grid-template-columns: 300px auto;
 }
 
