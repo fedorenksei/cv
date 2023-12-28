@@ -22,7 +22,7 @@
     border: 1px solid rgba(34, 0, 66, 0.292);
   }
 
-  #ec-app {
+  .project_wide {
     grid-template-columns: 200px auto;
   }
 
